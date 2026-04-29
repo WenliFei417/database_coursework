@@ -1,0 +1,94 @@
+
+
+-- =========================================================
+-- Lookup Tables
+-- =========================================================
+
+-- StudentStatus
+SELECT * FROM wfei01.StudentStatus;
+
+-- CourseLevel
+SELECT * FROM wfei01.CourseLevel;
+
+-- EnrollmentStatus
+SELECT * FROM wfei01.EnrollmentStatus;
+
+-- ClassroomType
+SELECT * FROM wfei01.ClassroomType;
+
+-- CoverageType
+SELECT * FROM wfei01.CoverageType;
+
+-- BenefitType
+SELECT * FROM wfei01.BenefitType;
+
+-- StudentType
+SELECT * FROM wfei01.StudentType;
+
+-- StudentLevel
+SELECT * FROM wfei01.StudentLevel;
+
+-- TermType
+SELECT * FROM wfei01.TermType;
+
+-- Race
+SELECT * FROM wfei01.Race;
+
+-- States
+SELECT * FROM wfei01.States;
+
+-- College
+SELECT * FROM wfei01.College;
+
+-- Building
+SELECT * FROM wfei01.Building;
+
+
+-- =========================================================
+-- Core Tables
+-- =========================================================
+
+-- PersonalInfo
+SELECT * FROM wfei01.PersonalInfo;
+
+-- Student
+SELECT * FROM wfei01.Student;
+
+-- Employee
+SELECT * FROM wfei01.Employee;
+
+-- JobCode
+SELECT * FROM wfei01.JobCode;
+
+-- EmployeeJob
+SELECT * FROM wfei01.EmployeeJob;
+
+-- EmployeeBenefit
+SELECT * FROM wfei01.EmployeeBenefit;
+
+-- Semester
+SELECT * FROM wfei01.Semester;
+
+-- Course
+SELECT * FROM wfei01.Course;
+
+-- CoursePrerequisite
+SELECT * FROM wfei01.CoursePrerequisite;
+
+-- Classroom
+SELECT * FROM wfei01.Classroom;
+
+-- Program
+SELECT * FROM wfei01.Program;
+
+-- StudentProgram
+SELECT * FROM wfei01.StudentProgram;
+
+-- CourseOffering
+SELECT * FROM wfei01.CourseOffering;
+
+-- CourseEnrollment
+SELECT * FROM wfei01.CourseEnrollment;
+
+-- CourseMeetingTime
+SELECT * FROM wfei01.CourseMeetingTime;

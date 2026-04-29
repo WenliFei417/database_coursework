@@ -1,0 +1,52 @@
+USE CSE581projects;
+GO
+
+-- Test cursor stored procedure
+EXEC wfei01.sp_ListCourseOfferingsBySemester_Cursor @SemesterId = 1;
+EXEC wfei01.sp_ListCourseOfferingsBySemester_Cursor @SemesterId = 999;
+GO
+
+-- Test update stored procedure
+EXEC wfei01.sp_UpdateEmployeeBenefit
+    @EmployeeId = 1,
+    @BenefitTypeId = 1,
+    @CoverageTypeId = 2,
+    @EmployeePremiumAmount = 220.00,
+    @EmployerPremiumAmount = 620.00;
+
+EXEC wfei01.sp_UpdateEmployeeBenefit
+    @EmployeeId = 1,
+    @BenefitTypeId = 1,
+    @CoverageTypeId = 2,
+    @EmployeePremiumAmount = -1.00,
+    @EmployerPremiumAmount = 620.00;
+GO
+
+-- Test delete stored procedure
+EXEC wfei01.sp_DeleteCoverageType @CoverageTypeId = 999;
+EXEC wfei01.sp_DeleteCoverageType @CoverageTypeId = 1;
+GO
+
+-- Test business action stored procedure
+EXEC wfei01.sp_EnrollStudentInCourse
+    @StudentId = 3,
+    @CRN = 10002;
+
+EXEC wfei01.sp_EnrollStudentInCourse
+    @StudentId = 1,
+    @CRN = 10001;
+GO
+
+-- Test function
+SELECT *
+FROM wfei01.fn_CoursePrerequisiteList();
+GO
+
+-- Test view
+SELECT *
+FROM wfei01.Benefits;
+GO
+
+
+GRANT EXECUTE ON SCHEMA::wfei01 TO Graders;
+GRANT SELECT ON SCHEMA::wfei01 TO Graders;
